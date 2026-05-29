@@ -18,5 +18,7 @@ api/audio_files/
 .pre-commit-config.yaml
 *.DS_Store
 asr_run.log
+convert.log
+taigi-ct2/
 *_asr.txt
 *.srt
