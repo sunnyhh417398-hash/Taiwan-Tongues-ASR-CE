@@ -17,3 +17,6 @@ model_for_finetune/
 api/audio_files/
 .pre-commit-config.yaml
 *.DS_Store
+asr_run.log
+*_asr.txt
+*.srt

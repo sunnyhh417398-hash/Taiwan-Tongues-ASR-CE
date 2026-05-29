@@ -61,12 +61,12 @@ def main():
     print(f"[2/4] Loading model: {model_id} (CPU)", flush=True)
     t0 = time.time()
     import torch
+    torch.set_num_threads(4)
     from transformers import pipeline
     pipe = pipeline(
         "automatic-speech-recognition",
         model=model_id,
         device=-1,
-        torch_dtype=torch.float32,
         chunk_length_s=30,
         stride_length_s=5,
     )
